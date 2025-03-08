@@ -24,10 +24,31 @@ body {
   cursor: pointer;
   border-radius: 5px;
   background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3;
 }
 
 a {
 text-decoration: none;
 color: blue;
 animation: shake 0.5s ease
+}
+
+.kotak-putih:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.styled-link {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.styled-link:hover {
+    color: blue;
 }
